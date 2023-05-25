@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>Customers Credit Risk</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+  <style>
+  body{
+    background: black;
+  }
+form {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: black;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  color: red;
+}
+
+label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: white;
+  width: 100%;
+}
+
+input[type="number"],
+select {
+    color: black;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  
+  border: 2px solid #64FF00;
+  background: #F5F5DC;
+}
+input[type="number"]:hover{
+    border-bottom: 2px solid #F300FF;
+}
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='5' viewBox='0 0 8 5'%3E%3Cpath d='M4 5L0 0h8L4 5z'/%3E%3C/svg%3E") no-repeat;
+  background-size: 8px 5px;
+  background-position: right 10px center;
+  padding-right: 20px;
+  color : green;
+}
+
+button[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+h1{
+    margin: 20px auto;
+    max-width: 500px;
+    color: white;
+}
+a,img{
+  visibility: hidden;
+}
+</style>
+
+  
+</head>
+
+<body>
+    <h1>- Credit risk calculator for a client -</h1>
+  <form>
+    <label>checking_status:</label>
+    <select name="0" id="0" required>
+    </select>
+
+    <label>duration:</label>
+    <input type = 'number' name="1" id="1" required><br>
+
+    <label>credit_history:</label>
+    <select name="2" id="2" required>2</select><br>
+
+    <label>purpose:</label>
+    <select name="3" id="3" required>3</select><br>
+
+    <label>credit_amount:</label>
+     <input type = 'number' name="4" id="4" required><br>
+
+    <label>savings_status:</label>
+    <select name="5" id="5" required>5</select><br>
+
+    <label>employment:</label>
+    <select name="6" id="6" required></select><br>
+
+    <label>installment_commitment:</label>
+    <select name="7" id="7" required></select><br>
+
+    <label>personal_status:</label>
+    <select name="8" id="8" required>8</select><br>
+
+    <label>other_parties:</label>
+    <select name="9" id="9" required>8</select><br>
+
+    <label>residence_since:</label>
+    <select name="10" id="10" required>9</select><br>
+
+    <label>property_magnitude:</label>
+    <select name="11" id="11" required>10</select><br>
+
+    <label>age:</label>
+    <input type = 'number' name="12" id="12" required><br>
+
+    <label>other_payment_plans:</label>
+    <select name="13" id="13" required></select>
+
+    <label>housing:</label>
+    <select name="14" id="14" required>13</select><br>
+
+    <label>existing_credits:</label>
+    <select name="15" id="15" required>114</select><br>
+
+    <label>job:</label>
+    <select name="16" id="16" required>15</select><br>
+
+    <label>num_dependents:</label>
+    <select name="17" id="17" required>16</select><br>
+
+    <label>own_telephone:</label>
+    <select name="18" id="18" required>17</select><br>
+
+    <label>foreign_worker:</label>
+    <select name="19" id="19" required></select><br>
+
+    <button type="submit">Guardar</button>
+  </form>
+<!-- p5 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>
+  <!-- ml5 -->
+  <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+  <!--Axios-->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js" integrity="sha512-dfX5uYVXzyU8+KHqj8bjo7UkOdg18PaOtpa48djpNbZHwExddghZ+ZmzWT06R5v6NSk3ZUfsH6FNEDepLx9hPQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="./Index.js"></script>
+</body>
+
+</html>
